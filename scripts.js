@@ -22,4 +22,6 @@ names.forEach(name => console.log(names));
 // Log each province in the provinces array
 provinces.forEach(province => console.log(provinces));
 
-// Log a combination of name and province,
+// Log a combination of name and province
+names.forEach((name, index) =>
+  console.log(`${names} (${provinces[index]})`));

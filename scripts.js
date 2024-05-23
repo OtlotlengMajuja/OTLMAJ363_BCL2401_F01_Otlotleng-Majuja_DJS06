@@ -55,6 +55,12 @@ console.log(sortedProvinces);
 
 // Exercise 5
 
+/**
+ * Filter out provinces that include the word "Cape" and log the count of remaining provinces.
+ */
+const filteringCape = provinces.filter(province => !province.includes("Cape"));
+console.log("Remaining provinces: " + filteringCape.length);
+
 // Exercise 6
 
 // Exercise 7

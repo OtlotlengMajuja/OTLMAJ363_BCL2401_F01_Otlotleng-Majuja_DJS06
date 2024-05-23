@@ -13,3 +13,13 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+// Exercise 1
+
+
+// Log each name in the names array
+names.forEach(name => console.log(names));
+// Log each province in the provinces array
+provinces.forEach(province => console.log(provinces));
+
+// Log a combination of name and province,

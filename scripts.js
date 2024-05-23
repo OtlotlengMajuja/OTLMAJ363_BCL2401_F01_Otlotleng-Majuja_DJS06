@@ -69,4 +69,14 @@ console.log("Remaining provinces: " + filteringCape.length);
 const containsSpecifiedLetter = names.map(name => name.includes("s"));
 console.log(containsSpecifiedLetter);
 
+/**
+ * Sort the names array such that names containing 's' come first, and log the sorted array.
+ */
+const sortedNames = names.sort((a, b) => {
+  if (a.includes("s") && !b.includes("s")) return -1;
+  if (!a.includes("s") && b.includes("s")) return 1;
+  return 0;
+});
+console.log(sortedNames);
+
 // Exercise 7

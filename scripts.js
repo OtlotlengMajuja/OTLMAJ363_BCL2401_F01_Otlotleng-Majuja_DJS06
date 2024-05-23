@@ -63,4 +63,10 @@ console.log("Remaining provinces: " + filteringCape.length);
 
 // Exercise 6
 
+/**
+ * Check if each name contains the letter 's' and log the result.
+ */
+const containsSpecifiedLetter = names.map(name => name.includes("s"));
+console.log(containsSpecifiedLetter);
+
 // Exercise 7

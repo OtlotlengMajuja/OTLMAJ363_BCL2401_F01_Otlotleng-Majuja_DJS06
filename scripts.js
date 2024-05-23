@@ -16,6 +16,9 @@ const products = [
 
 // Exercise 1
 
+/**
+ * Log each name and province to the console.
+ */
 
 // Log each name in the names array
 names.forEach(name => console.log(names));
@@ -35,6 +38,12 @@ const upperCaseProvinces = provinces.map(province => province.toUpperCase());
 console.log(upperCaseProvinces);
 
 // Exercise 3
+
+/**
+ * Create an array of the lengths of each name and log the result.
+ */
+const namesLength = names.map(name => name.length);
+console.log(namesLength);
 
 // Exercise 4   
 

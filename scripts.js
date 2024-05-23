@@ -21,13 +21,13 @@ const products = [
  */
 
 // Log each name in the names array
-names.forEach(name => console.log(names));
+names.forEach(name => console.log(name));
 // Log each province in the provinces array
-provinces.forEach(province => console.log(provinces));
+provinces.forEach(province => console.log(province));
 
 // Log a combination of name and province
 names.forEach((name, index) =>
-  console.log(`${names} (${provinces[index]})`));
+  console.log(`${name} (${provinces[index]})`));
 
 // Exercise 2
 

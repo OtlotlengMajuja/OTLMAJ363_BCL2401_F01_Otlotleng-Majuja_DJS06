@@ -45,7 +45,13 @@ console.log(upperCaseProvinces);
 const namesLength = names.map(name => name.length);
 console.log(namesLength);
 
-// Exercise 4   
+// Exercise 4
+
+/**
+ * Sort the provinces alphabetically and log the sorted array.
+ */
+const sortedProvinces = provinces.sort();
+console.log(sortedProvinces);
 
 // Exercise 5
 

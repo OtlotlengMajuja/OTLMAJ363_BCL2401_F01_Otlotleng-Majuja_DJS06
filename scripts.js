@@ -80,3 +80,13 @@ const sortedNames = names.sort((a, b) => {
 console.log(sortedNames);
 
 // Exercise 7
+
+/**
+ * This code combines names and provinces into a single object.
+ * To concatenate names and provinces, we can use reduce:
+ */
+const namesObject = Object.entries(names.map((name, index) => ({ name, province: provinces[index] })))
+  .reduce((acc, [key, { name, province }]) => {
+    return acc + name + (province ? ` (${province})` : '');
+  }, '');
+console.log(namesObject);

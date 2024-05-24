@@ -28,4 +28,13 @@ console.log(
      * Filter by Name Length: Filter out products with names longer than 5 characters.
      */
     products.filter(product => product.product.length <= 5),
+
+    // Advanced Exercise 3
+
+    /**
+     * Price Manipulation: Filter out products without prices, convert string prices to numbers, and calculate the total price using`reduce`.
+     */
+    products.filter(product => product.price !== '' && product.price !== ' ')
+        .map(product => Number(product.price))
+        .reduce((acc, current) => acc + current, 0),
 );

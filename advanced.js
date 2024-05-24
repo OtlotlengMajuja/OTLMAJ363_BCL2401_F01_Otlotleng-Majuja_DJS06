@@ -54,4 +54,14 @@ console.log(
     Math.max(...products.filter(product => product.price !== '' && product.price !== ' ').map(product => Number(product.price))) +
     ". Lowest: " +
     Math.min(...products.filter(product => product.price !== '' && product.price !== ' ').map(product => Number(product.price))),
+
+    // Advanced Exercise 6
+
+    /**
+     * Object Transformation: Using `Object.entries` and`reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
+     */
+    Object.entries(products).reduce((acc, [key, value]) => {
+        acc.push({ name: value.product, cost: value.price });
+        return acc;
+    }, [])
 );

@@ -69,21 +69,11 @@ console.log("Remaining provinces: " + filteringCape.length);
 const containsSpecifiedLetter = names.map(name => name.includes("s"));
 console.log(containsSpecifiedLetter);
 
-/**
- * Sort the names array such that names containing 's' come first, and log the sorted array.
- */
-const sortedNames = names.sort((a, b) => {
-  if (a.includes("s") && !b.includes("s")) return -1;
-  if (!a.includes("s") && b.includes("s")) return 1;
-  return 0;
-});
-console.log(sortedNames);
-
 // Exercise 7
 
 /**
  * This code combines names and provinces into a single object.
- * To concatenate names and provinces, we can use reduce:
+ * To concatenate names and provinces, we can `reduce`:
  */
 const namesObject = Object.entries(names.map((name, index) => ({ name, province: provinces[index] })))
   .reduce((acc, [key, { name, province }]) => {

@@ -37,4 +37,11 @@ console.log(
     products.filter(product => product.price !== '' && product.price !== ' ')
         .map(product => Number(product.price))
         .reduce((acc, current) => acc + current, 0),
+
+    // Advanced Exercise 4
+
+    /**
+     * Concatenate Product Names: Use `reduce` to concatenate all product names into a single string.
+     */
+    products.reduce((acc, product) => acc + product.product + " ", ""),
 );

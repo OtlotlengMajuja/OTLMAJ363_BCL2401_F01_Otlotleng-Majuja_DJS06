@@ -22,4 +22,10 @@ console.log(
      */
     products.forEach(product => console.log(product.product)),
 
+    // Advanced Exercise 2
+
+    /**
+     * Filter by Name Length: Filter out products with names longer than 5 characters.
+     */
+    products.filter(product => product.product.length <= 5),
 );

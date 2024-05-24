@@ -44,4 +44,14 @@ console.log(
      * Concatenate Product Names: Use `reduce` to concatenate all product names into a single string.
      */
     products.reduce((acc, product) => acc + product.product + " ", ""),
+
+    // Advanced Exercise 5
+
+    /**
+     * Find Extremes in Prices: Identify the highest and lowest - priced items, returning a string formatted as "Highest: X. Lowest: Y."
+     */
+    "Highest: " +
+    Math.max(...products.filter(product => product.price !== '' && product.price !== ' ').map(product => Number(product.price))) +
+    ". Lowest: " +
+    Math.min(...products.filter(product => product.price !== '' && product.price !== ' ').map(product => Number(product.price))),
 );
